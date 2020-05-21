@@ -9,6 +9,7 @@ Set-ExecutionPolicy -ExecutionPolicy "AllSigned" #Runs a script only if signed
 Set-ExecutionPolicy -ExecutionPolicy "RemoteSigned" #Runs all local scripts
 Set-ExecutionPolicy -ExecutionPolicy "Undefined"  #All scripts from all sources can be run without signing
 
+Set-ExecutionPolicy -ExecutionPolicy "Undefined"  -Scope CurrentUser
 
 C:\Temp\scope.ps1
 

@@ -3,7 +3,8 @@
 Demo : #$DebugPreference
 #>
 $DebugPreference
-
+$service = Get-Service -Name BITS
+Write-Debug $service.Named
 #Change error preference
 $DebugPreference = "Inquire" # Displays debug message and prompts user to continue (default behavior)
 $DebugPreference = "Continue" #Displays debug message and continues with execution
@@ -38,3 +39,4 @@ if ($service -eq "running" ){
 }
 
 
+Write-Error " eroor"

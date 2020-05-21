@@ -33,6 +33,16 @@ function Get-Bios {
     }
 }
 
+#Example 2
+try{Get-ChildItem c:\missingfolder}
+catch [system.exception] { "Caugh The exception"}
+Finally {$Error.Clear()};"error cleared"
+#Example 3
+
+try{dir c:\missingfolder  -ErrorAction Stop}
+catch [system.exception] { "Caugh The exception"}
+Finally {$Error.Clear()};"error cleared"
+
 # Build in Varianle for Errors
 $Error
 
