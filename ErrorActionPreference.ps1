@@ -30,7 +30,7 @@ function Get-Bios {
     }
 }
 
-# Build in Varianle for Errors
+# Build in Varible for Errors
 $Error
 
 
